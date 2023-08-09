@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,700;1,400&family=Gentium+Book+Plus:ital,wght@1,400;1,700&family=Inter:wght@400;700&family=Noto+Serif+Vithkuqi:wght@400;700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'andika';
+}
+
+.main{
+    
+    width: 98vw;
+    height: 100vw;
+    background: #201b2c;
+    display: flex;
+    /* eixo x */
+    justify-content: center;
+    /* eixo y */
+    align-items: center;
+    
+
+}
+
+.left{
+    width: 50vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left>h1{
+    color: #77ffc0;
+}
+.right{
+    
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    /*border: 5px solid red;*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(59, 102, 93, 0.329);
+    
+}
+.card>h1{
+    color: #77ffc0;
+    font-weight: 800;
+
+}
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgba(59, 102, 93, 0.329);
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.textfield > input::placeholder{
+    color: white;
+
+}
+input:focus{
+    border-color: aqua;
+}
+
+.textfield > label{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn-login{
+    width: 100%;
+    padding: 16px 8px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: lowercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: black;
+    background-color: aqua;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px rgba(22, 179, 145, 0.568);
+
+}
+
+.btn-login:hover{
+    transition: background is;
+    background: rgb(83, 187, 83);
+}
