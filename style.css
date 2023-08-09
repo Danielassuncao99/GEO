@@ -34,6 +34,9 @@
 .left>h1{
     color: #77ffc0;
 }
+img{
+    max-height: 80%;
+}
 .right{
     
     width: 50vw;
@@ -97,12 +100,12 @@ input:focus{
 }
 .btn-login{
     width: 100%;
-    padding: 16px 8px;
+    padding: 16px 0px;
     margin: 25px;
     border: none;
     border-radius: 8px;
     outline: none;
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 4px;
     color: black;
@@ -113,6 +116,6 @@ input:focus{
 }
 
 .btn-login:hover{
-    transition: background is;
+    transition: background 1s;
     background: rgb(83, 187, 83);
 }
