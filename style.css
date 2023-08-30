@@ -1,122 +1,170 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,700;1,400&family=Gentium+Book+Plus:ital,wght@1,400;1,700&family=Inter:wght@400;700&family=Noto+Serif+Vithkuqi:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
 
 *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'andika';
+    margin: 0px;  /* margem*/
+    padding: 0px; /*preenchimento*/
+    box-sizing: border-box; /*dimensionamento de caixa*/
+    font-family: 'Poppins', sans-serif; /*familia ou tipo da fonte*/
 }
-
-.main{
-    
-    width: 98vw;
-    height: 100vw;
-    background: #201b2c;
-    display: flex;
-    /* eixo x */
-    justify-content: center;
-    /* eixo y */
-    align-items: center;
-    
-
+main{
+    width: 100vw; /*largura */
+    height: 100vw; /*altura*/
+    background: #e2ce1a; /*fundo*/
+    display: flex; /*mostrar*/
+    justify-content: center; /*justiicar conteudo*/
+    align-items: center; /* itens alinhado*/
 }
-
 .left{
-    width: 50vw;
-    height: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    
+    
+    width: 304px; /*largura*/
+    height: 555px; /*altura*/
+    background: #36320A; /*cor de fundo*/
+    color: white; /*cor*/
+    text-align: center; /*alinhamento de texto*/
+    display: flex; /*mostrar*/
+    justify-content: center; /*justiicar conteudo*/
+    flex-direction: column; /*direção flexível*/
+    border-radius: 20px 0 0 20px; /*raio da borda*/
+    padding: 20px; /*preenchimento*/
+    
+}
+.left>img{
+    
+    width: 150px; /*altura*/
+    height: 150px; /*largura*/
+     
+     
+    text-align: center; /*alinhamento de texto*/
+    display: flex; /* mostrar*/
+    justify-content: space-between; /*justificar conteudo / espaço entre*/
+    flex-direction: column; /**/
+    
+    padding-left: 30px; /**/
+    
+}
+
+
+.left>button{
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 100%;
+    padding: 16px;
+    background-color: black;
+    color: white;
+
+    font-weight: bold;
+
+
+    
+}
+.btn-cadastrar{
+    border: 2px solid white; /**/
+    width: 232px; /**/
+    padding: 16px; /**/
+    border-radius: 30px;
+    background-color: black;
+    color: white; /**/
+    font-size: bolder; /* tamanho da fonte*/
+    font-weight: bold; /*espessura da fonte*/
+    
 }
 .left>h1{
-    color: #77ffc0;
+    font-size: 20px;
 }
-img{
-    max-width: 100%;
-    height: auto;
+.left>h3{
+    font-size: medium;
+    font-weight: 10;
+    padding: 10px;
 }
+
+
+.left>h4, a{
+    font-size: 15px; /**/
+   padding: 10px; /**/
+    color: white; /**/
+    
+}
+
 .right{
     
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card{
-    /*border: 5px solid red;*/
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 35px;
-    background: #2f2841;
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px rgba(59, 102, 93, 0.329);
+    width: 640px; /**/
+    height: 555px; /**/
+    background: #f3faa1; /**/
+    color: #000000; /**/
+    text-align: center; /**/
+    justify-content: center; /**/
+    align-items: center; /**/
+    flex-direction: column; /**/
+    border-radius: 0 20px 20px 0; /**/
+    padding: 60px; /**/
+    
     
 }
-.card>h1{
-    color: #77ffc0;
-    font-weight: 800;
+
+  
+
+
+
+
+ .textfield{
+    width: 480px;
+    display: flex; /**/
+    flex-direction: column; /**/
+    justify-content: center; /**/
+    align-items: right; /**/
+    margin: 10px 0px; /**/
+    position: relative; /**/
+    padding: 3px;
+
+    
+    
+
 
 }
-.textfield{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 10px 0px;
+
+.textfield > img{
+    position: absolute; /*posição*/
+    margin: 5px; /**/
 }
+.textfield>::placeholder{
+    padding-left: 20px; /**/
+    
+}
+
 
 .textfield > input{
     width: 100%;
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: #514869;
-    color: white;
+    background: #E2CE1A;
+    color: black;
     font-size: 12pt;
     box-shadow: 0px 10px 40px rgba(59, 102, 93, 0.329);
     outline: none;
-    border: 2px solid transparent;
+      
+        
+        
 }
 
-.textfield > input::placeholder{
-    color: white;
+input::placeholder{
+        padding-right: 10px; /**/
+        align-items: center;
+        font-weight: bold;
+        
+        
+    }
+    
+    
+    
 
-}
-input:focus{
-    border-color: aqua;
-}
+    
 
-.textfield > label{
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.btn-login{
-    width: 100%;
-    padding: 16px 0px;
-    margin: 25px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 4px;
-    color: black;
-    background-color: aqua;
-    cursor: pointer;
-    box-shadow: 0px 10px 40px rgba(22, 179, 145, 0.568);
+       
 
-}
 
-.btn-login:hover{
-    transition: background 1s;
-    background: rgb(83, 187, 83);
-}
+
+       
